@@ -24,11 +24,11 @@
 	#include <sys/poll.h>
 #endif
 
-#define BUFSIZE		 1024
-#define MAX_HEADERS	 256
-#define MAX_LEN		 1024
-#define MAX_STACK	 1024
-#define MAX_STACKDATA	 32768
+#define BUFSIZE		 8192
+#define MAX_HEADERS	 4096
+#define MAX_LEN		 16384
+#define MAX_STACK	 16384
+#define MAX_STACKDATA	 524288
 
 #define ATS_RESERVED    1
 #define ATS_UNIQUE      2
