@@ -164,6 +164,7 @@ void *ProxyLogin(struct mansession *s, struct message *m) {
 	key = astman_get_header(m, "Key");
 	actionid = astman_get_header(m, "ActionID");
 
+	debugmsg("Memsetting mo %u for %u", &mo, sizeof(struct message));
 	memset(&mo, 0, sizeof(struct message));
 	if( debug )
 		debugmsg("Login attempt as: %s/%s", user, secret);

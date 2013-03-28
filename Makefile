@@ -27,7 +27,7 @@ SOBJS := $(HANDLERS:%=%.so)
 LIBS := -lssl
 
 # Add -g below for debug/GDB symbols
-CFLAGS:=-Wall -O2 -D_REENTRANT -fPIC -Isrc/include -I/usr/include/openssl
+CFLAGS:=-Wall -O2 -D_REENTRANT -fPIC -Isrc/include -I/usr/include/openssl -ggdb
 
 ifeq (${OSARCH},Darwin)  
   LIBS+=-lresolv
